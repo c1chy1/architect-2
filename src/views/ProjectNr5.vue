@@ -1,0 +1,66 @@
+<template>
+  <section id="projectNr5">
+    <div class="w-11/12 lg:w-1/2 container mx-auto ">
+      <router-link id="back" to="/projekte" class="hidden lg:block absolute w-6 h-6 right-80"></router-link>
+      <img class=" mx-auto mt-8 lg:mt-20 shadow-img"
+           src="../assets/slider/08_home.jpg">
+      <h1 class="text-3xl py-2 lg:py-3">Albert Schweitzer Caree</h1>
+      <h2 class="text-xl py-2 lg:py-3 font-semibold">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</h2>
+      <h5 class="text-md font-semibold">Herne | 2.RANG</h5>
+      <article class=" xl:flex">
+        <div class=" text-sm py-2 lg:py-3 lg:text-base xl:pr-10">
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+            et dolore magna aliquyam erat.</p><br>
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+            et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+            Stet clita kasd gubergren.</p><br>
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+            et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div>
+          <img class="mx-auto shadow-img"
+               v-lazy="{src: `${require('../assets/projects/project7/03_project.jpg')}`}"
+          >
+        </div>
+      </article>
+      <article class="flex">
+      <img class="w-1/2 pr-1 my-2 "
+           v-lazy="{src: `${require('../assets/projects/project7/02_project.jpg')}`}">
+      <img class="w-1/2 pl-1 my-2 "
+           v-lazy="{src: `${require('../assets/projects/project7/06_project.jpg')}`}">
+      </article>
+      <article class="flex">
+        <img class="w-1/2 pr-1"
+
+             v-lazy="{src: `${require('../assets/projects/project7/01_project.jpg')}`}">
+        <img class="w-1/2 pl-1"
+
+             v-lazy="{src: `${require('../assets/projects/project7/05_project.jpg')}`}">
+      </article>
+      <img class="my-2 shadow-img"
+           v-lazy="{src: `${require('../assets/projects/project7/04_project.jpg')}`}">
+    </div>
+    <ToTop/>
+    <Footer/>
+  </section>
+</template>
+<script>
+
+import Footer from "../components/Footer";
+import ToTop from "../components/ToTop";
+
+export default {
+  name: "ProjectNr5",
+
+  components: {
+    Footer,ToTop
+  }
+}
+</script>
+
+<style scoped>
+#back {
+  background: url(../assets/svg/close-icon.svg) no-repeat;
+}
+</style>
