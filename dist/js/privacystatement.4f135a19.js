@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["privacystatement"],{eaaf:function(t,e,n){"use strict";n.r(e);var a=n("7a23"),r={class:"text-center lg:text-8xl font-raleway mt-5"};function c(t,e,n,c,o,s){return Object(a["C"])(),Object(a["g"])("h1",r,"Datenschutzerklärung")}var o={name:"PrivacyStatement",beforeMount:function(){window.scrollTo(0,0)}},s=n("6b0d"),u=n.n(s);const i=u()(o,[["render",c]]);e["default"]=i}}]);
+//# sourceMappingURL=privacystatement.4f135a19.js.map
